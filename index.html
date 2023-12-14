@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>VKG Player</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <h1>VKG Player</h1>
+        <div class="student-info">
+          <p></p><!-- my student info will be dynamically added here -->
+        </div>
+      </div>
+    </header>
+
+    <!-- genre selection and fetch button -->
+    <div class="chooser">
+      <!-- label and dropdown for selecting genre -->
+      <label for="genre">Select Genre:</label>
+      <select id="genre">
+        <!-- genre options -->
+        <option value="rock">Rock</option>
+        <option value="pop">Pop</option>
+        <option value="hip hop">Hip Hop</option>
+        <option value="jazz">Jazz</option>
+        <option value="country">Country</option>
+        <option value="blues">Blues</option>
+        <option value="metal">Metal</option>
+        <option value="classical">Classical</option>
+        <option value="reggae">Reggae</option>
+        <option value="electronic">Electronic</option>
+        <option value="folk">Folk</option>
+        <option value="indie">Indie</option>
+        <option value="latin">Latin</option>
+        <option value="rnb">R&B</option>
+      </select>
+
+      <!-- button to fetch top tracks -->
+      <button id="search-btn">Fetch Top Tracks</button>
+    </div>
+
+    <!-- result section -->
+    <div id="result"></div>
+
+    <!-- javascript file link -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
