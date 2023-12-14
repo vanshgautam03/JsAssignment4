@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // API key for Last.fm
   const apiKey = "6eabbc94590c36dfad51ec088400339f";
 
+  // Dynamically add student info
+  const studentId = "200544016";
+  const studentName = "Vansh Kumar Gautam";
+  const headerContent = document.querySelector(".header-content");
+  const studentInfo = document.createElement("p");
+  studentInfo.textContent = `Student ID: ${studentId} | Name: ${studentName}`;
+  document.querySelector(".student-info").appendChild(studentInfo);
+
   // Event listener for the search button
   searchBtn.addEventListener("click", async () => {
     // Get the selected genre from the dropdown
